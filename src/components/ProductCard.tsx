@@ -1,10 +1,10 @@
-interface CardProps {
+interface ProductCardProps {
   name: string;
   price: number;
   stock: number;
 }
 
-function ProductCard({ name, price, stock }: CardProps) {
+function ProductCard({ name, price, stock }: ProductCardProps) {
   const isSoldOut = stock === 0;
   return (
     <div className="p-4 bg-white shadow rounded-lg">
