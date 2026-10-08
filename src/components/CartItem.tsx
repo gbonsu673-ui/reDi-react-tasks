@@ -32,7 +32,7 @@ function CartItem({ name, price, quantity, onSale }: CartItemProps) {
       {/* Flex Item: 2 - a div containing quantity and line total of cart item */}
       <div className="flex justify-between gap-4">
         <p>Qty: {quantity}</p>
-        <p>${lineTotal.toFixed(2)}</p>
+        <p className="font-bold">${lineTotal.toFixed(2)}</p>
       </div>
     </div>
   );

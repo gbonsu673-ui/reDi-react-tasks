@@ -32,6 +32,7 @@ function App() {
       </div>
 
       {/* Display product items in shopping cart */}
+      <p className="font-extrabold p-6">Shopping Cart 🛒</p>
       <div>
         {cartItems.map((item) => (
           <CartItem
