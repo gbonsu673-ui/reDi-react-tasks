@@ -15,7 +15,7 @@ function ProductCard({ name, price, stock }: ProductCardProps) {
 
       {/* Add to cart or Sold out button */}
       <button
-        className="mt-2 bg-blue-600 text-white px-3 py-1 rounded cursor-pointer"
+        className={`mt-2 bg-blue-600 text-white px-3 py-1 rounded ${isSoldOut ? "cursor-not-allowed bg-gray-400" : "cursor-pointer"}`}
         disabled={isSoldOut}
         /*Added onClick to display message when item is added to cart*/
         onClick={() => alert(`${name} is added to cart!`)}

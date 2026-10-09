@@ -1,5 +1,6 @@
 // Typescript
-interface CartItemProps {
+export interface CartItemProps {
+  id: number;
   name: string;
   price: number;
   quantity: number;
