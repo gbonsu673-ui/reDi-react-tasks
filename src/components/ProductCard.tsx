@@ -1,9 +1,11 @@
+// Typescript annotation
 interface ProductCardProps {
   name: string;
   price: number;
   stock: number;
 }
 
+// Product Card Component
 function ProductCard({ name, price, stock }: ProductCardProps) {
   const isSoldOut = stock === 0;
   return (
