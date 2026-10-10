@@ -3,6 +3,7 @@ import CartItem from "./components/CartItem";
 import { products } from "./data/products";
 import { cartItems } from "./data/cart";
 
+// App Component
 function App() {
   // Computing sold out items - from session with Arian
   const soldOutCount = products.filter((product) => product.stock === 0).length;

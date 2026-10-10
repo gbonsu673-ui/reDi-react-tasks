@@ -1,4 +1,4 @@
-// Typescript
+// Typescript annotation
 export interface CartItemProps {
   id: number;
   name: string;
